@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: guilherme
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: Recipe_RoRCapstone_development
+
+test:
+  <<: *default
+  database: Recipe_RoRCapstone_test
+
+production:
+  <<: *default
+  database: Recipe_RoRCapstone_production
+  username: Recipe_RoRCapstone
+  password: <%= ENV['RECIPE_RORCAPSTONE_DATABASE_PASSWORD'] %>
