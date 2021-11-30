@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+ :root {
+    --blue: #3778c2;
+    --white: #ffffff;
+  }  
+
+ * {
+     list-style: none;
+     text-decoration: none;
+ }
+
+ body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f5f6f8;
+ }
+
+.nav_container {
+    display: flex;
+    color:#ffffff;
+    background-color: #3778c2;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_container > h1 {
+    margin: 0;
+}
