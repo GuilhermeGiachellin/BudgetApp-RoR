@@ -1,27 +1,9 @@
 <p id="notice"><%= notice %></p>
+<div class="root_title_cnt">
+<h1 class="root_title">App Name</h1>
+</div>
+<div class="root_btn_cnt">
+<%= button_to "LOG IN", new_user_session_path, class: 'login_btn' %>  
+<%= button_to "SIGN UP", new_user_registration_path, class: 'signup_btn' %>
 
-<h1>Users</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
+</div>

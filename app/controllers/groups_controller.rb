@@ -4,6 +4,7 @@ class GroupsController < ApplicationController
   # GET /groups or /groups.json
   def index
     @groups = Group.all
+    @user = current_user
   end
 
   # GET /groups/1 or /groups/1.json
@@ -12,7 +13,9 @@ class GroupsController < ApplicationController
 
   # GET /groups/new
   def new
-    @group = Group.new
+    @group = Group.new 
+    @group.user_id = current_user.id
+    @icons = ['House', 'Food', 'Investment']   
   end
 
   # GET /groups/1/edit

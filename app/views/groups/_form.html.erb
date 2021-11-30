@@ -18,14 +18,8 @@
 
   <div class="field">
     <%= form.label :icon %>
-    <%= form.text_field :icon %>
+    <%= form.select :icon, options_for_select(@icons) %>
   </div>
-
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
-
   <div class="actions">
     <%= form.submit %>
   </div>
