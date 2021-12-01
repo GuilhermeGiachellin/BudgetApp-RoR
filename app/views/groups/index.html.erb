@@ -7,7 +7,7 @@
 </div>
 <ul>
 <% @groups.each do |group| %>
-<%= link_to group do %>
+<%= link_to group_entities_path(group.id) do %>
   <li class="category_li">
   <div class="category_content">
     <%= image_tag 'test_img.jpg', alt: 'category', class: 'category_image'%>
