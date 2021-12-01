@@ -7,6 +7,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 
   def expenses_sum_user
-    entities.sum(:amount)
+    entity.sum(:amount)
   end
+  
 end
