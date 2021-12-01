@@ -1,20 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <div class="nav_container">
+<%= link_to groups_path do %>
+<p>Back</p>
+<% end %>
 <h1>Transactions</h1>
 <i class="fas fa-arrow-left"></i>
 </div>
-
- <ul>
-  
+<div class="total_ctn">
+<p>Total expended: $ <%= entity.amount %></p>
+</div>
+ <ul>  
     <% @entities.each do |entity| %>
       <li class="category_li">  
         <h3><%= entity.name %></h3>
-        <p><%= entity.amount %></p>
-    
-  </li>      
+        <p>$<%= entity.amount %></p>    
+      </li>      
     <% end %>
-    </ul>
+  </ul>
  
 
 <br>
