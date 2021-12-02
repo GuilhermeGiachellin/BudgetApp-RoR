@@ -1,6 +1,8 @@
 <div class="nav_container">
-
-<h1 class='category_title'>Category</h1>
+<div class="search_cnt">
+<i class="fas fa-search fa-2x"></i>
+</div>
+<h1>Category</h1>
 <%= link_to destroy_user_session_path, method: :delete, class: "icons" do %>
   <i class="fas fa-sign-out-alt fa-2x"></i>
 <% end %>
@@ -8,6 +10,10 @@
 <div class="total_ctn">
 <p>Total expended: </p><p class='value_sum'>$<%= @expenses %></p>
 </div>
+<% if user_signed_in?%>  
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> 
+    <%end%>
 <ul>
 <% @groups.each do |group| %>
 <%= link_to group_entities_path(group.id) do %>

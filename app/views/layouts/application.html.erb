@@ -11,12 +11,7 @@
     <script src="https://kit.fontawesome.com/3410ed71d0.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    
+  <body>  
     <%= yield %>
-  <% if user_signed_in?%>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%end%>
     </body>
 </html>
