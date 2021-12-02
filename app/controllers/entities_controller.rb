@@ -3,7 +3,7 @@ class EntitiesController < ApplicationController
   before_action :set_group, only: %i[new edit create index]
 
   def index
-    @entities = @group.entities
+    @entities = @group.entities.order(created_at: :desc)
     @expenses_group = @group.entities.sum(:amount)
   end
 
