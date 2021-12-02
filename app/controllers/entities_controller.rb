@@ -4,6 +4,7 @@ class EntitiesController < ApplicationController
 
   def index    
     @entities = @group.entities
+    @expenses_group = @group.entities.sum(:amount)
   end
 
   def show; end

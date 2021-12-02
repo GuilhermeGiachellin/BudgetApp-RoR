@@ -6,16 +6,6 @@
     --white: #ffffff;
 }
 
-.total_ctn {
-    height: 7vh;
-    background-color: var(--white); 
-    border-bottom: 1px solid #e3e4e6;   
-}
-
-.total_ctn > p {
-    margin: 0 2%;
-}
-
 ul {
     width: 90%;
     padding: 0;
@@ -23,24 +13,15 @@ ul {
     height: 73vh;
 }
 
-.category_li {
-    display: flex;  
-    align-items: center;  
-    height: 15vh;
-    border-bottom: 1px solid #e3e4e6;  
-    margin-top: 2vh;  
-    background-color: var(--white); 
-}
-
 .category_image {
-    height: 10vh;
+    height: 8vh;
     margin-right: 2%;
 }
 
 .category_content {
     display: flex;
     align-items: center; 
-    margin-left: 2%;
+    margin-left: 3%;
     width: 70%;
 }
 

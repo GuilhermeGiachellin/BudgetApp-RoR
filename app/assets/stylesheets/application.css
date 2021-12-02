@@ -35,19 +35,15 @@
     background-color: #3778c2;
     height: 10vh;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-.nav_container > h1 {
-    margin: 0;
 }
 
 .form_fields {
     width: 100%;
-    height: 30px;
+    height: 45px;
     border:none;
-    padding: 0;
+    padding-left: 10px
 }
 
 select, option {
@@ -55,4 +51,76 @@ select, option {
     height: 30px;
     border:none;
     padding: 0;
+}
+
+.total_ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    background-color: var(--white); 
+    border-bottom: 1px solid #e3e4e6;   
+}
+
+.total_ctn > p {
+    margin: 0 3%;    
+}
+
+.value_sum {
+    font-weight: bold;
+}
+
+.category_li {
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;
+    height: 12vh;
+    border-bottom: 1px solid #e3e4e6;  
+    margin-top: 2vh;  
+    background-color: var(--white); 
+}
+
+i {
+    color: white;    
+}
+
+.icons {
+    margin: 0 3%;
+}
+
+div.actions {
+    margin: 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;    
+    width: 100%;   
+    height: 10vh;    
+}
+
+.actions > input {          
+    height: 7vh;
+    width: 80%;      
+    border-radius: 2px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);    
+    font-size: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+h3 {
+    color: black;
+}
+
+.category_title {
+    width: 100%;
+    text-align: center;
+    margin-left: 12%;
+}
+
+.login_title {
+    width: 100%;
+    text-align: center;
+    margin-right: 12%;
 }

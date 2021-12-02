@@ -6,14 +6,7 @@
     --white: #ffffff;
   }
 
-.login_btn {
-    background-color: var(--blue);
-    color: var(--white);
-    width: 100%;
-    height: 7vh;
-    border: none;
-    margin: 0 auto;
-}
+
 
 .signup_btn {
     background-color: var(--white);
@@ -21,6 +14,25 @@
     height: 7vh;
     border: none;
     margin: 0 auto;
+}
+
+.login_btn {
+    background-color: var(--blue);
+    color: var(--white);
+    width: 100%;
+    height: 7vh;
+    border: none;
+    margin: 1vh auto;
+}
+
+.login_btn:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+.signup_btn:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
 }
 
 .root_title_cnt {
