@@ -23,19 +23,19 @@ RSpec.describe 'Entities Pages', type: :feature do
       click_link 'Food'
     end
 
-    it 'Expects to see Transacitons title' do        
-        expect(page).to have_content('Transactions')
+    it 'Expects to see Transacitons title' do
+      expect(page).to have_content('Transactions')
     end
 
-    it 'Expects to see New Transactions title' do 
-      click_link 'New Transaction'     
+    it 'Expects to see New Transactions title' do
+      click_link 'New Transaction'
       expect(page).to have_content('New Transactions')
     end
 
     it 'Create a new transaction' do
-      click_link 'New Transaction' 
+      click_link 'New Transaction'
       fill_in 'entity[name]', with: 'Content'
-      fill_in 'entity[amount]', with: 25    
+      fill_in 'entity[amount]', with: 25
       click_button 'Create Transactions'
       expect(page).to have_content('Content')
       expect(page).to have_content(25)

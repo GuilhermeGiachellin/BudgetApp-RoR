@@ -23,22 +23,22 @@ RSpec.describe 'Groups Pages', type: :feature do
     end
 
     it 'Expects to see category title' do
-        expect(page).to have_content('Category')
+      expect(page).to have_content('Category')
     end
 
-    it 'Expects to see one category in the index page' do      
+    it 'Expects to see one category in the index page' do
       expect(page).to have_content('Food')
     end
 
     it 'Create a new category' do
       click_link 'New Category'
       fill_in 'group[name]', with: 'Games'
-      select('Games', :from => 'group[icon]')      
+      select('Games', from: 'group[icon]')
       click_button 'Create Category'
       expect(page).to have_content('Games')
     end
 
-    it 'Go to a categories details page' do      
+    it 'Go to a categories details page' do
       click_link 'Food'
       expect(page).to have_content('Transactions')
     end

@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.describe 'User', type: :model do
   before(:each) do
     @user = User.new(
-        name: 'Akuma the Akita',
-        email: 'doggo@doggo.com',
-        password: 'password'
-      )
+      name: 'Akuma the Akita',
+      email: 'doggo@doggo.com',
+      password: 'password'
+    )
   end
 
   it 'Name should be present' do
