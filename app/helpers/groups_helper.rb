@@ -5,7 +5,7 @@ module GroupsHelper
       ['Car', 'car.png'],
       ['Games', 'console.png'],
       ['Books', 'books.png'],
-      ['Fitness', 'Dumbbell.png'],
+      ['Fitness', 'dumbbell.png'],
       ['Entertainment', 'entertainment.png'],
       ['Food', 'food.png'],
       ['Home', 'home.png']
