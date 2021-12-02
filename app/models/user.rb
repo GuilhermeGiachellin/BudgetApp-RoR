@@ -6,6 +6,8 @@ class User < ApplicationRecord
   has_many :entity, dependent: :destroy
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 
+  validates_presence_of :name  
+
   def expenses_sum_user
     entity.sum(:amount)
   end

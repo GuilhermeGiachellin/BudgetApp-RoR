@@ -124,3 +124,19 @@ h3 {
     text-align: center;
     margin-right: 12%;
 }
+
+.search_cnt {
+    margin: 0 3%;
+}
+
+.notice_cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: absolute;
+    height: 4vh;    
+}
+
+.alert, .notice {
+    text-align: center;
+}
