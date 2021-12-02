@@ -6,8 +6,6 @@
     --white: #ffffff;
   }
 
-
-
 .signup_btn {
     background-color: var(--white);
     width: 100%;
@@ -46,4 +44,10 @@
 .root_btn_cnt {
     margin: 0 auto;
     width: 90%;
+}
+
+.root_title {
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 3rem;
 }
