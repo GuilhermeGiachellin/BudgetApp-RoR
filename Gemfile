@@ -26,7 +26,8 @@ gem 'cancancan'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 
-group :development, :test do  
+group :development, :test do 
+  gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -36,10 +37,10 @@ group :development do
 end
 
 group :test do  
+gem "database_cleaner"
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver' 
   gem 'webdrivers'
 end
-
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

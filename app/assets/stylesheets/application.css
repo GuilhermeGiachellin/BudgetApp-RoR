@@ -64,7 +64,11 @@ select, option {
 }
 
 .total_ctn > p {
-    margin: 0 3%;    
+    margin: 0 3%;      
+}
+
+.total_expended {
+    font-size: 18px;    
 }
 
 .value_sum {
