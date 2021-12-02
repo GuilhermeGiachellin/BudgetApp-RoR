@@ -9,6 +9,8 @@ The Budgeteer is an app that keep track of your expenses. It allows you to creat
 
 ## [Live version](https://budgeteer-ror.herokuapp.com/)
 
+## [Video](https://www.loom.com/share/f1ad06485fab4b69aaa92ac3dd5a0a8e)
+
 ## :hammer: Built With
 
 - Ruby on Rails
@@ -29,6 +31,10 @@ The Budgeteer is an app that keep track of your expenses. It allows you to creat
 
 - GitHub: [@GuilhermeGiachellin](https://github.com/GuilhermeGiachellin)
 - LinkedIn: [GuilhermeGiachellin](https://www.linkedin.com/in/guilherme-giachellin-2599771b9/)
+
+## Acknowledgments
+
+- [Grégoire Vella](https://www.behance.net/gregoirevella) for the design.
 
 ## 🤝 Contributing
 
