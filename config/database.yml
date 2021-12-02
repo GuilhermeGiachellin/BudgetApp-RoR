@@ -16,6 +16,6 @@ test:
 
 production:
   <<: *default
-  database: Recipe_RoRCapstone_production
-  username: Recipe_RoRCapstone
-  password: <%= ENV['RECIPE_RORCAPSTONE_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  # username: Recipe_RoRCapstone
+  # password: <%= ENV['RECIPE_RORCAPSTONE_DATABASE_PASSWORD'] %>
