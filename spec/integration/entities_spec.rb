@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Groups Pages', type: :feature do
+RSpec.describe 'Entities Pages', type: :feature do
   describe 'index Page' do
     before(:all) do
       user = User.create(
