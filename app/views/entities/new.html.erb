@@ -1,0 +1,13 @@
+<div class="nav_container">
+<%= link_to group_entities_path, class: "icons" do %>
+<i class="fas fa-arrow-left fa-2x"></i>
+<% end %>
+<h1>New Transactions</h1>
+<%= link_to destroy_user_session_path, method: :delete, class: "icons" do %>
+  <i class="fas fa-sign-out-alt fa-2x"></i>
+<% end %>
+</div>
+
+<%= render 'form', entity: @entity %>
+
+<%= link_to 'Back', group_entities_path %>

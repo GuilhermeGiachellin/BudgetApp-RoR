@@ -1,0 +1,35 @@
+<div class="nav_container">
+<div class="search_cnt">
+<i class="fas fa-search fa-2x"></i>
+</div>
+<h1>Category</h1>
+<%= link_to destroy_user_session_path, method: :delete, class: "icons" do %>
+  <i class="fas fa-sign-out-alt fa-2x"></i>
+<% end %>
+</div>
+<div class="total_ctn">
+<p class="total_expended">Total expended: </p><p class='value_sum'>$<%= @expenses %></p>
+</div>
+<% if user_signed_in?%>  
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> 
+    <%end%>
+<ul>
+<% @groups.each do |group| %>
+<%= link_to group_entities_path(group.id) do %>
+  <li class="category_li">
+  <div class="category_content">
+    <%= image_tag "#{group.icon}", alt: 'icon', class: 'category_image'%>
+    <div>
+    <h3><%= group.name %></h3>
+    <p><%= group.created_at.strftime("%d %b %Y")%></p>
+    </div>
+  </div>  
+    <p class="entity_content value_sum">$<%= group.expenses_group_sum %></p>   
+  </li>
+  <% end %>
+<% end %>
+</ul>
+<div class="category_btn_cnt">
+<%= link_to 'New Category', new_group_path, class:"category_btn" %>
+</div>

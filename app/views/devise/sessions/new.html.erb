@@ -1,0 +1,20 @@
+<div class="nav_container">
+<%= link_to root_path, class: "icons" do %>
+<i class="fas fa-arrow-left fa-2x"></i>
+<% end %>
+<h1 class="login_title">Budgeteer</h1>
+</div>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'form_fields', placeholder: 'Email'%>
+  </div>
+
+  <div class="field">    
+    <%= f.password_field :password, autocomplete: "current-password", class:'form_fields', placeholder: 'Password'%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
